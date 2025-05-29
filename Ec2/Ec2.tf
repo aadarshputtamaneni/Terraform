@@ -1,12 +1,12 @@
 # resource <resource-type> <resource-name>
-resource "aws_instance" "demo" {
+resource "aws_instance" "db" {
 
     ami = "ami-09c813fb71547fc4f"
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     instance_type = "t2.micro"
 
     tags = {
-        Name = "demo"
+        Name = "db"
     }
 }
 

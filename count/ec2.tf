@@ -1,4 +1,4 @@
-# resource <resource-type> <resource-name>
+ # resource <resource-type> <resource-name>
 resource "aws_instance" "db" {
     #count = 3
     count = length(var.instance_names)

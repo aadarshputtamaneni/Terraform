@@ -1,3 +1,4 @@
+ 
 # ec2 variables
 variable "instance_names" {
     type = list
@@ -5,12 +6,12 @@ variable "instance_names" {
 }
 variable "image_id" {
   type        = string #optional
-  default     = "ami-09c813fb71547fc4f" #optional
+  default     = "sg-054f0106648bd17d6" #optional
   description = "RHEL-9 AMI ID" #optional
 }
 
 variable "instance_type" {
-    default = "t3.micro"
+    default = "t2.micro"
     type = string
 }
 
@@ -47,9 +48,9 @@ variable "allowed_cidr" {
 
 #r53 variables
 variable "zone_id" {
-    default = "Z08884492QFPW45HM4UQO"
+    default = "Z05163661N6AOSLOBF3TO"
 }
 
 variable "domain_name" {
-    default = "aadarsh153.com"
+    default = "cloudwithaadarsh.site"
 }
